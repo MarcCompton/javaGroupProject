@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Quiz {
+public class QuizG3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); 
         int correctAnswers = 0;         // Counter for correct answers

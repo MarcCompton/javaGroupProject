@@ -3,10 +3,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class RiskFactors {
+public class RiskFactorsG3 {
     public static void displayRiskFactors() {
         try {
-            File file1 = new File("RiskFactors.txt"); // Ensure this file exists in the same directory
+            File file1 = new File("RiskFactorsG3.txt"); // Ensure this file exists in the same directory
             Scanner sc = new Scanner(file1);    // Create a Scanner object to read the file
             System.out.println("\n=== Risk Factors ===");
             while (sc.hasNextLine()) {          // Check if there is another line in the file

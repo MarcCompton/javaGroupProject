@@ -2,10 +2,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Resources {
+public class ResourcesG3 {
     public static void displayResources() {
         try {
-            File file = new File("Resources.txt"); // Ensure this file exists in the same directory
+            File file = new File("ResourcesG3.txt"); // Ensure this file exists in the same directory
             Scanner sc = new Scanner(file); // Create a Scanner object to read the file
             System.out.println("\n=== Resources ===");
             while (sc.hasNextLine()) {      // Check if there is another line in the file

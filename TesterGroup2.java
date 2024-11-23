@@ -21,20 +21,20 @@ public class TesterGroup2 {
 
                 switch (choice) {
                     case 1:
-                        Introduction.displayIntroduction();     
+                        IntroductionG3.displayIntroduction();     
                         break;
                     case 2:
-                        RiskFactors.displayRiskFactors();  
+                        RiskFactorsG3.displayRiskFactors();  
                         break;
                     case 3:
-                        PreventionTechniques.displayPreventionTechniques();  
+                        PreventionTechniquesG3.displayPreventionTechniques();  
                         break;
                     case 4:
                         System.out.println("\nStarting the quiz...");    
-                        Quiz.main(new String[]{});  // Call the Quiz main method
+                        QuizG3.main(new String[]{});  // Call the Quiz main method
                         break;
                     case 5:
-                        Resources.displayResources();  
+                        ResourcesG3.displayResources();  
                         break;
                     case 6:  // Exit the program
                         System.out.println("Thank you for using the Cyberbullying Prevention Program. Stay safe!");

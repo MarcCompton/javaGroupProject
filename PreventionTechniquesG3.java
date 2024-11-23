@@ -2,11 +2,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class PreventionTechniques {
+public class PreventionTechniquesG3 {
 
     public static void displayPreventionTechniques() {
         // Ensure that the file "PreventionTechniques.txt" exists in the directory
-        File file1 = new File("PreventionTechniques.txt");
+        File file1 = new File("PreventionTechniquesG3.txt");
 
         try { // Try to read the file
             Scanner sc = new Scanner(file1);    
