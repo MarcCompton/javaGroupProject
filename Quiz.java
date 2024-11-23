@@ -10,7 +10,7 @@ public class Quiz {
         System.out.println("Welcome to the Cyberbullying Quiz!\n");
         System.out.println("Type  'quit'  anytime to exit the quiz.\n");
 
-        for (int questionNumber = 1; questionNumber <= 23; questionNumber++) {
+        for (int questionNumber = 1; questionNumber <= 25; questionNumber++) {
             if (quit) break;
             switch (questionNumber) {
                 case 1:
@@ -445,7 +445,7 @@ public class Quiz {
                     }
                     break;
 
-                    case 21:
+                case 21:
                     // Question 21
                     System.out.println("21. What is the primary characteristic of cyberbullying?\n");
                     System.out.println("A: Random online interactions");
@@ -467,7 +467,7 @@ public class Quiz {
                     }
                     break;
 
-                    case 22:
+                case 22:
                     // Question 22
                     System.out.println("22. Cyberbullying that targets someone's gender, race, or religion is an example of what?\n");
                     System.out.println("A: Harmless jokes");
@@ -489,7 +489,7 @@ public class Quiz {
                     }
                     break;
 
-                    case 20:
+                case 23:
                     // Question 23
                     System.out.println("23. Why is cyberbullying harmful in the real world\n");
                     System.out.println("A: It only affects the digital persona");
@@ -510,12 +510,56 @@ public class Quiz {
                         System.out.println("The correct answer is: C\n");
                     }
                     break;
+
+                case 24:
+                    // Question 24
+                    System.out.println("24. What is a shared factor for both bullying and being bullied?\n");
+                    System.out.println("A: High levels of moral engagement");
+                    System.out.println("B: Strict school rules");
+                    System.out.println("C: Involvement in school bullying");
+                    System.out.println("D: Low self-esteem only");
+                    System.out.print("\nYour answer: ");
+                    answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        quit = true;
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
+                    if (answer.equals("d")) {
+                        correctAnswers++;
+                        System.out.println("That is correct!\n");
+                    } else {
+                        System.out.println("The correct answer is: D\n");
+                    }
+                    break;
+
+                case 25:
+                    // Question 25
+                    System.out.println("25. What is a common emotional consequence for victims of cyberbullying?\n");
+                    System.out.println("A: Feelings of shame and anxiety");
+                    System.out.println("B: Increased happiness");
+                    System.out.println("C: Improved concentration");
+                    System.out.println("D: Boosted confidence");
+                    System.out.print("\nYour answer: ");
+                    answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        quit = true;
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
+                    if (answer.equals("a")) {
+                        correctAnswers++;
+                        System.out.println("That is correct!\n");
+                    } else {
+                        System.out.println("The correct answer is: A\n");
+                    }
+                    break;
             }
         }
 
         // Final score
         if (!quit) {
-            System.out.println("Quiz complete! You got " + correctAnswers + " out of 23 correct.");
+            System.out.println("Quiz complete! You got " + correctAnswers + " out of 25 correct.");
             return;
         }
         scanner.close();
