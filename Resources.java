@@ -1,10 +1,19 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class Resources {
     public static void displayResources() {
-        System.out.println("\n=== Resources ===");
-        System.out.println("1. StopBullying.gov: https://www.stopbullying.gov");
-        System.out.println("2. Cyberbullying Research Center: https://www.cyberbullying.org");
-        System.out.println("3. NetSmartz: https://www.netsmartz.org");
-        System.out.println("4. ConnectSafely: https://www.connectsafely.org");
-        System.out.println("These websites provide valuable information and tools to combat cyberbullying.");
+        try {
+            File file = new File("Resources.txt"); // Ensure this file exists in the same directory
+            Scanner sc = new Scanner(file);
+            System.out.println("\n=== Resources ===");
+            while (sc.hasNextLine()) {
+                System.out.println(sc.nextLine());
+            }
+            sc.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred while reading the Resources file: " + e.getMessage());
+        }
     }
 }
