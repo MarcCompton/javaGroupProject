@@ -20,6 +20,25 @@ public class Quiz {
                         "   b) Private profile\n" +
                         "   c) Sharing personal information\n" +
                         "   d) None of the above"
+                "4. Which is NOT a form of cyberbullying?\n" +
+                        "   a) leaking images of someone\n" +
+                        "   b) sending hateful messages\n" +
+                        "   c) getting someone a gift\n" +  // Answer
+                        "   d) targeting someone in a video game",
+                "5. Is cyberbullying intentional or not?\n" +
+                        "   a) Yes\n" + // Answer
+                        "   b) No,"
+                "6. Can Cyberbullying effect people in the real world?\n" +
+                        "   a) Yes\n" + // Answer
+                        "   b) No,"
+                "7. What should a person NOT do about Cyberbullying?\n" +
+                        "   a) Tell someone\n" +
+                        "   b) Bully back\n" +  // Answer
+                        "   c) Walk away\n" +
+                        "   d) Block the bully",
+                "8. Is cyberbullying intentional most of the time?\n" +
+                        "   a) Yes\n" + // Answer
+                        "   b) No,"
         };
 
         String[] answers = {"b", "b", "b"};
