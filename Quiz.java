@@ -226,4 +226,43 @@ public class Quiz {
                     break;
 
                 case 14:
-                   
+                    // Question 14
+                    System.out.println("14. What should parents do to protect their children from cyberbullying?\n");
+                    System.out.println("A: Monitor online activities and communicate openly about digital safety");
+                    System.out.println("B: Ignore it and hope for the best");
+                    System.out.println("C: Let children handle it themselves");
+                    System.out.println("D: Teach children to retaliate if they’re bullied");
+                    System.out.print("\nYour answer: ");
+                    answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("a")) {
+                        correctAnswers++;
+                        System.out.println("That is correct!\n");
+                    } else {
+                        System.out.println("The correct answer is: A\n");
+                    }
+                    break;
+
+                case 15:
+                    // Question 15
+                    System.out.println("15. Can cyberbullying happen through video games?\n");
+                    System.out.println("A: Yes, through online interactions in multiplayer games");
+                    System.out.println("B: No, video games are always positive experiences");
+                    System.out.println("C: Only if you share personal information");
+                    System.out.println("D: None of the above");
+                    System.out.print("\nYour answer: ");
+                    answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("a")) {
+                        correctAnswers++;
+                        System.out.println("That is correct!\n");
+                    } else {
+                        System.out.println("The correct answer is: A\n");
+                    }
+                    break;
+            }
+        }
+
+        // Final score
+        System.out.println("Quiz complete! You got " + correctAnswers + " out of 15 correct.");
+        scanner.close();
+    }
+}
