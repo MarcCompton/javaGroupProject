@@ -10,7 +10,7 @@ public class Quiz {
         System.out.println("Welcome to the Cyberbullying Quiz!\n");
         System.out.println("Type  'quit'  anytime to exit the quiz.\n");
 
-        for (int questionNumber = 1; questionNumber <= 15; questionNumber++) {
+        for (int questionNumber = 1; questionNumber <= 20; questionNumber++) {
             if (quit) break;
             switch (questionNumber) {
                 case 1:
@@ -253,7 +253,7 @@ public class Quiz {
                     // Question 12
                     System.out.println("12. Why is it important to keep records of cyberbullying incidents?\n");
                     System.out.println("A: To have proof in case the situation needs to be reported");
-                    System.out.println("B: It’s not important");
+                    System.out.println("B: It's not important");
                     System.out.println("C: To use it against the bully later");
                     System.out.println("D: To share it with the public");
                     System.out.print("\nYour answer: ");
@@ -297,7 +297,7 @@ public class Quiz {
                     System.out.println("A: Monitor online activities and communicate openly about digital safety");
                     System.out.println("B: Ignore it and hope for the best");
                     System.out.println("C: Let children handle it themselves");
-                    System.out.println("D: Teach children to retaliate if they’re bullied");
+                    System.out.println("D: Teach children to retaliate if they're bullied");
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
                     if (answer.equals("quit")) {
@@ -334,12 +334,122 @@ public class Quiz {
                         System.out.println("The correct answer is: A\n");
                     }
                     break;
+
+                case 16:
+                    // Question 16
+                    System.out.println("16. Which of the following is a common factor that increases the risk of being cyberbullied?\n");
+                    System.out.println("A: High self-esteem");
+                    System.out.println("B: Negative school climate");
+                    System.out.println("C: Lack of internet access");
+                    System.out.println("D: Strong peer support");
+                    System.out.print("\nYour answer: ");
+                    answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        quit = true;
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
+                    if (answer.equals("b")) {
+                        correctAnswers++;
+                        System.out.println("That is correct!\n");
+                    } else {
+                        System.out.println("The correct answer is: B\n");
+                    }
+                    break;
+
+                case 17:
+                    // Question 17
+                    System.out.println("17. What personality traits are associated with a higher likelihood of engaging in cyberbullying?\n");
+                    System.out.println("A: Compassion and kindness");
+                    System.out.println("B: Dark triad traits (Machiavellianism, narcissism, psychopathy)");
+                    System.out.println("C: Introversion and shyness");
+                    System.out.println("D: Optimism and confidence");
+                    System.out.print("\nYour answer: ");
+                    answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        quit = true;
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
+                    if (answer.equals("b")) {
+                        correctAnswers++;
+                        System.out.println("That is correct!\n");
+                    } else {
+                        System.out.println("The correct answer is: B\n");
+                    }
+                    break;
+
+                case 18:
+                    // Question 18
+                    System.out.println("18. How might high levels of affective empathy impact involvement in cyberbullying?\n");
+                    System.out.println("A: Increases the likelihood of bullying others");
+                    System.out.println("B: Reduces both bullying and victimization");
+                    System.out.println("C: Increases the risk of victimization");
+                    System.out.println("D: Has no impact on cyberbullying");
+                    System.out.print("\nYour answer: ");
+                    answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        quit = true;
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
+                    if (answer.equals("c")) {
+                        correctAnswers++;
+                        System.out.println("That is correct!\n");
+                    } else {
+                        System.out.println("The correct answer is: C\n");
+                    }
+                    break;
+
+                case 19:
+                    // Question 19
+                    System.out.println("19. Which of the following is a potential consequence of cyberbullying?\n");
+                    System.out.println("A: Improved academic performance");
+                    System.out.println("B: Enhanced social skills");
+                    System.out.println("C: Increased popularity");
+                    System.out.println("D: Emotional and physical harm");
+                    System.out.print("\nYour answer: ");
+                    answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        quit = true;
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
+                    if (answer.equals("d")) {
+                        correctAnswers++;
+                        System.out.println("That is correct!\n");
+                    } else {
+                        System.out.println("The correct answer is: D\n");
+                    }
+                    break;
+
+                case 20:
+                    // Question 20
+                    System.out.println("20. What is a key environmental factor that can contribute to cyberbullying?\n");
+                    System.out.println("A: Positive school climate");
+                    System.out.println("B: Lack of awareness of online risks");
+                    System.out.println("C: Strong school policies on bullying");
+                    System.out.println("D: High levels of adult supervision");
+                    System.out.print("\nYour answer: ");
+                    answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        quit = true;
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
+                    if (answer.equals("b")) {
+                        correctAnswers++;
+                        System.out.println("That is correct!\n");
+                    } else {
+                        System.out.println("The correct answer is: B\n");
+                    }
+                    break;
             }
         }
 
         // Final score
         if (!quit) {
-            System.out.println("Quiz complete! You got " + correctAnswers + " out of 15 correct.");
+            System.out.println("Quiz complete! You got " + correctAnswers + " out of 20 correct.");
             return;
         }
         scanner.close();
