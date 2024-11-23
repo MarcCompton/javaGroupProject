@@ -6,7 +6,7 @@ public class Quiz {
         int correctAnswers = 0; // Counter for correct answers
         String answer;
 
-        System.out.println("Welcome to the Cyberbullying Quiz!");
+        System.out.println("Welcome to the Cyberbullying Quiz!\n\n");
 
         for (int questionNumber = 1; questionNumber <= 15; questionNumber++) {
             switch (questionNumber) {
