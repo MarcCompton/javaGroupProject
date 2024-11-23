@@ -10,7 +10,7 @@ public class Quiz {
         System.out.println("Welcome to the Cyberbullying Quiz!\n");
         System.out.println("Type  'quit'  anytime to exit the quiz.\n");
 
-        for (int questionNumber = 1; questionNumber <= 20; questionNumber++) {
+        for (int questionNumber = 1; questionNumber <= 23; questionNumber++) {
             if (quit) break;
             switch (questionNumber) {
                 case 1:
@@ -444,12 +444,78 @@ public class Quiz {
                         System.out.println("The correct answer is: B\n");
                     }
                     break;
+
+                    case 21:
+                    // Question 21
+                    System.out.println("21. What is the primary characteristic of cyberbullying?\n");
+                    System.out.println("A: Random online interactions");
+                    System.out.println("B: Intentional and repeated harassment");
+                    System.out.println("C: Accidental misuse of technology");
+                    System.out.println("D: Positive encouragement online");
+                    System.out.print("\nYour answer: ");
+                    answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        quit = true;
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
+                    if (answer.equals("b")) {
+                        correctAnswers++;
+                        System.out.println("That is correct!\n");
+                    } else {
+                        System.out.println("The correct answer is: B\n");
+                    }
+                    break;
+
+                    case 22:
+                    // Question 22
+                    System.out.println("22. Cyberbullying that targets someone's gender, race, or religion is an example of what?\n");
+                    System.out.println("A: Harmless jokes");
+                    System.out.println("B: Freedom of speech");
+                    System.out.println("C: Discrimination");
+                    System.out.println("D: Personal preference");
+                    System.out.print("\nYour answer: ");
+                    answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        quit = true;
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
+                    if (answer.equals("c")) {
+                        correctAnswers++;
+                        System.out.println("That is correct!\n");
+                    } else {
+                        System.out.println("The correct answer is: C\n");
+                    }
+                    break;
+
+                    case 20:
+                    // Question 23
+                    System.out.println("23. Why is cyberbullying harmful in the real world\n");
+                    System.out.println("A: It only affects the digital persona");
+                    System.out.println("B: It has no real-world consequences");
+                    System.out.println("C: It can cause lasting mental scars");
+                    System.out.println("D: It boosts social skills");
+                    System.out.print("\nYour answer: ");
+                    answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        quit = true;
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
+                    if (answer.equals("c")) {
+                        correctAnswers++;
+                        System.out.println("That is correct!\n");
+                    } else {
+                        System.out.println("The correct answer is: C\n");
+                    }
+                    break;
             }
         }
 
         // Final score
         if (!quit) {
-            System.out.println("Quiz complete! You got " + correctAnswers + " out of 20 correct.");
+            System.out.println("Quiz complete! You got " + correctAnswers + " out of 23 correct.");
             return;
         }
         scanner.close();
