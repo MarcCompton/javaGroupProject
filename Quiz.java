@@ -208,7 +208,7 @@ public class Quiz {
                 case 10:
                     // Question 10
                     System.out.println("10. Why is it important to avoid sharing personal information online?\n");
-                    System.out.println("A: It’s not important");
+                    System.out.println("A: It's not important");
                     System.out.println("B: Sharing personal information helps make more friends");
                     System.out.println("C: It helps protect your privacy and prevents others from misusing your information");
                     System.out.println("D: Schools require students to share personal information on social media");
