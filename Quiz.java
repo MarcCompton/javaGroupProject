@@ -2,16 +2,16 @@ import java.util.Scanner;
 
 public class Quiz {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int correctAnswers = 0; // Counter for correct answers
+        Scanner scanner = new Scanner(System.in); 
+        int correctAnswers = 0;         // Counter for correct answers
         String answer;
-        boolean quit = false;
+        boolean quit = false;  // Flag to exit the quiz
 
         System.out.println("Welcome to the Cyberbullying Quiz!\n");
         System.out.println("Type  'quit'  anytime to exit the quiz.\n");
 
         for (int questionNumber = 1; questionNumber <= 25; questionNumber++) {
-            if (quit) break;
+            if (quit) break;   // Exit the loop if the user quits
             switch (questionNumber) {
                 case 1:
                     // Question 1
@@ -22,18 +22,21 @@ public class Quiz {
                     System.out.println("D: Sharing photos responsibly");
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
-                    if (answer.equals("quit")) {
-                        quit = true;  
+                    if (answer.equals("quit")) {  // Check if the user wants to quit
+                        quit = true;   
                         System.out.println("You have exited the quiz.");
                         break;
                     }
-                    if (answer.equals("b")) {
+                    if (answer.equals("b")) {  // Check if the answer is correct
                         correctAnswers++;
                         System.out.println("That is correct!\n");
                     } else {
-                        System.out.println("The correct answer is: B\n");
+                        System.out.println("The correct answer is: B\n"); // Display the correct answer
                     }
                     break;
+
+    
+                    // Add more cases for the remaining questions. Each case should follow the same structure as above.
 
                 case 2:
                     // Question 2
@@ -559,8 +562,8 @@ public class Quiz {
 
         // Final score
         if (!quit) {
-            System.out.println("Quiz complete! You got " + correctAnswers + " out of 25 correct.");
-            return;
+            System.out.println("Quiz complete! You got " + correctAnswers + " out of 25 correct.");    // Display the final score
+            return; // Exit the program
         }
         scanner.close();
     }
