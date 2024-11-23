@@ -6,7 +6,8 @@ public class Quiz {
         int correctAnswers = 0; // Counter for correct answers
         String answer;
 
-        System.out.println("Welcome to the Cyberbullying Quiz!\n\n");
+        System.out.println("Welcome to the Cyberbullying Quiz!\n");
+        System.out.println("Type  'quit'  anytime to exit the quiz.\n");
 
         for (int questionNumber = 1; questionNumber <= 15; questionNumber++) {
             switch (questionNumber) {
@@ -19,6 +20,10 @@ public class Quiz {
                     System.out.println("D: Sharing photos responsibly");
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
                     if (answer.equals("b")) {
                         correctAnswers++;
                         System.out.println("That is correct!\n");
@@ -36,6 +41,10 @@ public class Quiz {
                     System.out.println("D: Ignore it completely");
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
                     if (answer.equals("b")) {
                         correctAnswers++;
                         System.out.println("That is correct!\n");
@@ -53,6 +62,10 @@ public class Quiz {
                     System.out.println("D: None of the above");
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
                     if (answer.equals("b")) {
                         correctAnswers++;
                         System.out.println("That is correct!\n");
@@ -70,6 +83,10 @@ public class Quiz {
                     System.out.println("D: Targeting someone in a video game");
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
                     if (answer.equals("c")) {
                         correctAnswers++;
                         System.out.println("That is correct!\n");
@@ -85,6 +102,10 @@ public class Quiz {
                     System.out.println("B: No");
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
                     if (answer.equals("a")) {
                         correctAnswers++;
                         System.out.println("That is correct!\n");
@@ -100,6 +121,10 @@ public class Quiz {
                     System.out.println("B: No");
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
                     if (answer.equals("a")) {
                         correctAnswers++;
                         System.out.println("That is correct!\n");
@@ -117,6 +142,10 @@ public class Quiz {
                     System.out.println("D: Block the bully");
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
                     if (answer.equals("b")) {
                         correctAnswers++;
                         System.out.println("That is correct!\n");
@@ -132,6 +161,10 @@ public class Quiz {
                     System.out.println("B: No");
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
                     if (answer.equals("a")) {
                         correctAnswers++;
                         System.out.println("That is correct!\n");
@@ -149,6 +182,10 @@ public class Quiz {
                     System.out.println("D: Encourage students to ignore cyberbullying when they see it.");
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
                     if (answer.equals("b")) {
                         correctAnswers++;
                         System.out.println("That is correct!\n");
@@ -166,6 +203,10 @@ public class Quiz {
                     System.out.println("D: Schools require students to share personal information on social media");
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
                     if (answer.equals("c")) {
                         correctAnswers++;
                         System.out.println("That is correct!\n");
@@ -183,6 +224,10 @@ public class Quiz {
                     System.out.println("D: Fight the bully");
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
                     if (answer.equals("a")) {
                         correctAnswers++;
                         System.out.println("That is correct!\n");
@@ -194,29 +239,35 @@ public class Quiz {
                 case 12:
                     // Question 12
                     System.out.println("12. Why is it important to keep records of cyberbullying incidents?\n");
-                    System.out.println("A: To share them widely on social media for attention");
-                    System.out.println("B: To embarrass the bully later");
-                    System.out.println("C: To prove to friends that you’re being bullied");
-                    System.out.println("D: To have evidence, such as screenshots, that can help authorities");
+                    System.out.println("A: To have proof in case the situation needs to be reported");
+                    System.out.println("B: It’s not important");
+                    System.out.println("C: To use it against the bully later");
+                    System.out.println("D: To share it with the public");
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
-                    if (answer.equals("d")) {
+                    if (answer.equals("quit")) {
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
+                    if (answer.equals("a")) {
                         correctAnswers++;
                         System.out.println("That is correct!\n");
                     } else {
-                        System.out.println("The correct answer is: D\n");
+                        System.out.println("The correct answer is: A\n");
                     }
                     break;
 
                 case 13:
                     // Question 13
-                    System.out.println("13. How can limiting technology or social media access help with cyberbullying?\n");
-                    System.out.println("A: It removes the temptation to see harmful posts or messages");
-                    System.out.println("B: It prevents bullies from targeting you");
-                    System.out.println("C: It guarantees that no one will ever bully you again");
-                    System.out.println("D: It makes sure no one knows about bullying");
+                    System.out.println("13. Can cyberbullying happen through social media?\n");
+                    System.out.println("A: Yes");
+                    System.out.println("B: No");
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
                     if (answer.equals("a")) {
                         correctAnswers++;
                         System.out.println("That is correct!\n");
@@ -234,6 +285,10 @@ public class Quiz {
                     System.out.println("D: Teach children to retaliate if they’re bullied");
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
                     if (answer.equals("a")) {
                         correctAnswers++;
                         System.out.println("That is correct!\n");
@@ -251,6 +306,10 @@ public class Quiz {
                     System.out.println("D: None of the above");
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
+                    if (answer.equals("quit")) {
+                        System.out.println("You have exited the quiz.");
+                        break;
+                    }
                     if (answer.equals("a")) {
                         correctAnswers++;
                         System.out.println("That is correct!\n");
@@ -258,6 +317,11 @@ public class Quiz {
                         System.out.println("The correct answer is: A\n");
                     }
                     break;
+            }
+
+            // End quiz if "quit" is typed
+            if (answer.equals("quit")) {
+                break;
             }
         }
 
