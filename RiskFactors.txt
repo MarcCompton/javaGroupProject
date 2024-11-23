@@ -27,10 +27,8 @@ Consequences:
 
 IMPORTANT NOTES:
 
-Some of the same risk factors influence both onset cyberbullying and cybervictimization.
-Most studies find that age and gender don't play significant roles.
-While it is expected that dark triad traits play a factor in cyberbullying, two studies say that it did not play
-a predictive role; in fact, the oppposite could be true. 
-While aarly studies showed that perpetrators and victims typically experience bullying themselves, later research suggests that they can be popular, well-adjusted kids with no prior exposure.
-This makes cyberbullying and cybervictimization difficult to predict.
-It can happen to anyone. 
+    * Some of the same risk factors influence both onset cyberbullying and cybervictimization.
+    * Most studies find that age and gender don't play significant roles.
+    * While it is expected that dark triad traits play a factor in cyberbullying, two studies say that it did not play a predictive role; in fact, the oppposite could be true. 
+    * While aarly studies showed that perpetrators and victims typically experience bullying themselves, later research suggests that they can be popular, well-adjusted kids with no prior exposure. This makes cyberbullying and cybervictimization difficult to predict.
+    * It can happen to anyone. 
