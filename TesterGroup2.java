@@ -19,7 +19,7 @@ public class TesterGroup2 {
 
             switch (choice) {
                 case 1 -> Introduction.displayIntroduction();
-                case 2 -> RiskFactors.displayRiskFactors();
+                case 2 -> RiskFactors.displayRiskFactors(); // Call the updated method
                 case 3 -> PreventionTechniques.displayPreventionTechniques();
                 case 4 -> Quiz.startQuiz(scanner);
                 case 5 -> Resources.displayResources();
@@ -32,4 +32,3 @@ public class TesterGroup2 {
         }
     }
 }
-
