@@ -1,26 +1,33 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class PreventionTechniques {
+
     public static void displayPreventionTechniques() {
+        // Ensure that the file "PreventionTechniques.txt" exists in the directory
+        File file1 = new File("PreventionTechniques.txt");
 
         try {
-            File file1 = new File("PreventionTechniques.txt"); // Ensure this file exists in the same directory
             Scanner sc = new Scanner(file1);
             System.out.println("\n=== Prevention Techniques ===");
+
+            // Read and display each line from the file
             while (sc.hasNextLine()) {
                 System.out.println(sc.nextLine());
             }
-            sc.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("An error occurred while reading the RiskFactors file: " + e.getMessage());
-        }
 
-        /*
-        System.out.println("\n=== Prevention Techniques ===");
-        System.out.println("1. Block and report bullies on social media platforms.");
-        System.out.println("2. Keep your accounts private and share information selectively.");
-        System.out.println("3. Educate yourself about digital safety and privacy settings.");
-        System.out.println("4. Talk to trusted adults if you or someone you know is being bullied.");
-        System.out.println("5. Avoid responding to provocative messages or engaging with bullies.");
-        */
+            // Close the scanner
+            sc.close();
+
+        } catch (FileNotFoundException e) {
+            // Improved error message
+            System.out.println("Error: The file 'PreventionTechniques.txt' was not found.");
+            System.out.println("Details: " + e.getMessage());
+        }
+    }
+
+    public static void main(String[] args) {
+        displayPreventionTechniques();  // Call the method to display prevention techniques
     }
 }
-
