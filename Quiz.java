@@ -340,11 +340,8 @@ public class Quiz {
         // Final score
         if (!quit) {
             System.out.println("Quiz complete! You got " + correctAnswers + " out of 15 correct.");
+            return;
         }
         scanner.close();
-
-        if (!quit) {
-            return; 
-        }
     }
 }
