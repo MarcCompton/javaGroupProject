@@ -21,8 +21,11 @@ public class TesterGroup2 {
                 case 1 -> Introduction.displayIntroduction();
                 case 2 -> RiskFactors.displayRiskFactors();
                 case 3 -> PreventionTechniques.displayPreventionTechniques();
-                case 4 -> Quiz.startQuiz(scanner);
-                case 5 -> Resources.displayResources(); // Call the Resources method
+                case 4 -> {
+                    System.out.println("\nStarting the quiz...");
+                    Quiz.main(new String[]{}); // Calls the Quiz class's main method
+                }
+                case 5 -> Resources.displayResources();
                 case 6 -> {
                     System.out.println("Thank you for using the Cyberbullying Prevention Program. Stay safe!");
                     return;
