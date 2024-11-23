@@ -5,6 +5,7 @@ public class Quiz {
         Scanner scanner = new Scanner(System.in);
         int correctAnswers = 0; // Counter for correct answers
         String answer;
+        boolean quit = false;
 
         System.out.println("Welcome to the Cyberbullying Quiz!\n");
         System.out.println("Type  'quit'  anytime to exit the quiz.\n");
