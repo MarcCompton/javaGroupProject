@@ -11,6 +11,7 @@ public class Quiz {
         System.out.println("Type  'quit'  anytime to exit the quiz.\n");
 
         for (int questionNumber = 1; questionNumber <= 15; questionNumber++) {
+            if (quit) break;
             switch (questionNumber) {
                 case 1:
                     // Question 1
@@ -22,6 +23,7 @@ public class Quiz {
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
                     if (answer.equals("quit")) {
+                        quit = true;  
                         System.out.println("You have exited the quiz.");
                         break;
                     }
@@ -43,6 +45,7 @@ public class Quiz {
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
                     if (answer.equals("quit")) {
+                        quit = true;
                         System.out.println("You have exited the quiz.");
                         break;
                     }
@@ -64,6 +67,7 @@ public class Quiz {
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
                     if (answer.equals("quit")) {
+                        quit = true;
                         System.out.println("You have exited the quiz.");
                         break;
                     }
@@ -85,6 +89,7 @@ public class Quiz {
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
                     if (answer.equals("quit")) {
+                        quit = true;
                         System.out.println("You have exited the quiz.");
                         break;
                     }
@@ -104,6 +109,7 @@ public class Quiz {
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
                     if (answer.equals("quit")) {
+                        quit = true;
                         System.out.println("You have exited the quiz.");
                         break;
                     }
@@ -123,6 +129,7 @@ public class Quiz {
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
                     if (answer.equals("quit")) {
+                        quit = true;
                         System.out.println("You have exited the quiz.");
                         break;
                     }
@@ -144,6 +151,7 @@ public class Quiz {
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
                     if (answer.equals("quit")) {
+                        quit = true;
                         System.out.println("You have exited the quiz.");
                         break;
                     }
@@ -163,6 +171,7 @@ public class Quiz {
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
                     if (answer.equals("quit")) {
+                        quit = true;
                         System.out.println("You have exited the quiz.");
                         break;
                     }
@@ -184,6 +193,7 @@ public class Quiz {
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
                     if (answer.equals("quit")) {
+                        quit = true;
                         System.out.println("You have exited the quiz.");
                         break;
                     }
@@ -205,6 +215,7 @@ public class Quiz {
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
                     if (answer.equals("quit")) {
+                        quit = true;
                         System.out.println("You have exited the quiz.");
                         break;
                     }
@@ -226,6 +237,7 @@ public class Quiz {
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
                     if (answer.equals("quit")) {
+                        quit = true;
                         System.out.println("You have exited the quiz.");
                         break;
                     }
@@ -247,6 +259,7 @@ public class Quiz {
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
                     if (answer.equals("quit")) {
+                        quit = true;
                         System.out.println("You have exited the quiz.");
                         break;
                     }
@@ -266,6 +279,7 @@ public class Quiz {
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
                     if (answer.equals("quit")) {
+                        quit = true;
                         System.out.println("You have exited the quiz.");
                         break;
                     }
@@ -287,6 +301,7 @@ public class Quiz {
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
                     if (answer.equals("quit")) {
+                        quit = true;
                         System.out.println("You have exited the quiz.");
                         break;
                     }
@@ -308,6 +323,7 @@ public class Quiz {
                     System.out.print("\nYour answer: ");
                     answer = scanner.nextLine().trim().toLowerCase();
                     if (answer.equals("quit")) {
+                        quit = true;
                         System.out.println("You have exited the quiz.");
                         break;
                     }
@@ -319,15 +335,16 @@ public class Quiz {
                     }
                     break;
             }
-
-            // End quiz if "quit" is typed
-            if (answer.equals("quit")) {
-                break;
-            }
         }
 
         // Final score
-        System.out.println("Quiz complete! You got " + correctAnswers + " out of 15 correct.");
+        if (!quit) {
+            System.out.println("Quiz complete! You got " + correctAnswers + " out of 15 correct.");
+        }
         scanner.close();
+
+        if (!quit) {
+            return; 
+        }
     }
 }

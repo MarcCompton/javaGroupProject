@@ -14,23 +14,40 @@ public class TesterGroup2 {
             System.out.println("6. Exit");
             System.out.print("Enter your choice: ");
 
-            int choice = scanner.nextInt();
-            scanner.nextLine(); // Clear the input buffer
+            // Check if the input is a valid integer
+            if (scanner.hasNextInt()) {
+                int choice = scanner.nextInt();  // Read the integer choice
+                scanner.nextLine();  // Clear the input buffer
 
-            switch (choice) {
-                case 1 -> Introduction.displayIntroduction();
-                case 2 -> RiskFactors.displayRiskFactors();
-                case 3 -> PreventionTechniques.displayPreventionTechniques();
-                case 4 -> {
-                    System.out.println("\nStarting the quiz...");
-                    Quiz.main(new String[]{}); // Calls the Quiz class's main method
+                switch (choice) {
+                    case 1:
+                        Introduction.displayIntroduction();
+                        break;
+                    case 2:
+                        RiskFactors.displayRiskFactors();
+                        break;
+                    case 3:
+                        PreventionTechniques.displayPreventionTechniques();
+                        break;
+                    case 4:
+                        System.out.println("\nStarting the quiz...");
+                        Quiz.main(new String[]{}); // Calls the Quiz class's main method
+                        break;
+                    case 5:
+                        Resources.displayResources();
+                        break;
+                    case 6:
+                        System.out.println("Thank you for using the Cyberbullying Prevention Program. Stay safe!");
+                        scanner.close(); // Close the scanner when done
+                        return;  // Exit the program gracefully
+                    default:
+                        System.out.println("Invalid choice. Please select a valid option.");
+                        break;
                 }
-                case 5 -> Resources.displayResources();
-                case 6 -> {
-                    System.out.println("Thank you for using the Cyberbullying Prevention Program. Stay safe!");
-                    return;
-                }
-                default -> System.out.println("Invalid choice. Please select a valid option.");
+            } else {
+                // If input is not an integer, print a message and clear the buffer
+                System.out.println("Invalid input. Please enter a valid option (1-6).");
+                scanner.nextLine();  // Clear the invalid input
             }
         }
     }
