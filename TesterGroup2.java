@@ -123,11 +123,11 @@ class QuizG3 {
         boolean quit = false;
 
         // Create a list of question numbers and shuffle them
-        ArrayList<Integer> questionNumbers = new ArrayList<>();
+        ArrayList<Integer> questionNumbers = new ArrayList<>(); // Create an ArrayList to store question numbers
         for (int i = 1; i <= 25; i++) {
-            questionNumbers.add(i);
+            questionNumbers.add(i); // Add question numbers from 1 to 25
         }
-        Collections.shuffle(questionNumbers);
+        Collections.shuffle(questionNumbers); // Shuffle the question numbers
 
         System.out.println("Welcome to the Cyberbullying Quiz!\n");
         System.out.println("You will get 5 random questions.");
