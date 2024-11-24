@@ -1,9 +1,9 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Random;
-import java.util.Scanner;
+import java.io.File; // Import the File class to read files
+import java.io.FileNotFoundException; // Import this class to handle errors
+import java.util.ArrayList; // Import the ArrayList class to store question numbers
+import java.util.Collections; // Import the Collections class to shuffle the question numbers
+import java.util.Random; // Import the Random class to generate
+import java.util.Scanner; // Import the Scanner class to read user input
 
 public class TesterGroup2 {
     public static void main(String[] args) {
@@ -26,20 +26,20 @@ public class TesterGroup2 {
 
                 switch (choice) {
                     case 1:
-                        IntroductionG3.displayIntroduction();     
+                        IntroductionG2.displayIntroduction();  // Call the displayIntroduction method
                         break;
                     case 2:
-                        RiskFactorsG3.displayRiskFactors();  
+                        RiskFactorsG2.displayRiskFactors();  // Call the displayRiskFactors method
                         break;
                     case 3:
-                        PreventionTechniquesG3.displayPreventionTechniques();  
+                        PreventionTechniquesG2.displayPreventionTechniques();  // Call the displayPreventionTechniques method
                         break;
                     case 4:
                         System.out.println("\nStarting the quiz...");    
-                        QuizG3.main(new String[]{});  // Call the Quiz main method
+                        QuizG2.main(new String[]{});  // Call the Quiz main method
                         break;
                     case 5:
-                        ResourcesG3.displayResources();  
+                        ResourcesG2.displayResources();  // Call the displayResources method
                         break;
                     case 6:  // Exit the program
                         System.out.println("Thank you for using the Cyberbullying Prevention Program. Stay safe!");
@@ -59,10 +59,10 @@ public class TesterGroup2 {
     }
 
 
-class IntroductionG3{
+class IntroductionG2{
     public static void displayIntroduction() {
         try {
-            File file = new File("IntroductionG3.txt"); // Ensure this file exists in the same directory
+            File file = new File("IntroductionG2.txt"); // Ensure this file exists in the same directory
             Scanner sc = new Scanner(file); // Create a Scanner object to read the file
             System.out.println("\n=== Introduction ===");
             while (sc.hasNextLine()) {  // Check if there is another line in the file
@@ -75,10 +75,10 @@ class IntroductionG3{
     }
 }
 
-class RiskFactorsG3{
+class RiskFactorsG2{
     public static void displayRiskFactors() {
         try {
-            File file1 = new File("RiskFactorsG3.txt"); // Ensure this file exists in the same directory
+            File file1 = new File("RiskFactorsG2.txt"); // Ensure this file exists in the same directory
             Scanner sc = new Scanner(file1);    // Create a Scanner object to read the file
             System.out.println("\n=== Risk Factors ===");
             while (sc.hasNextLine()) {          // Check if there is another line in the file
@@ -91,10 +91,10 @@ class RiskFactorsG3{
     }
 }
 
-class PreventionTechniquesG3{
+class PreventionTechniquesG2{
     public static void displayPreventionTechniques() {
         // Ensure that the file "PreventionTechniques.txt" exists in the directory
-        File file1 = new File("PreventionTechniquesG3.txt");
+        File file1 = new File("PreventionTechniquesG2.txt");
 
         try { // Try to read the file
             Scanner sc = new Scanner(file1);    
@@ -114,7 +114,7 @@ class PreventionTechniquesG3{
     }
 }
 
-class QuizG3 {
+class QuizG2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
@@ -694,10 +694,10 @@ class QuizG3 {
 }
 }
 
-class ResourcesG3{
+class ResourcesG2{
     public static void displayResources() {
         try {
-            File file = new File("ResourcesG3.txt"); // Ensure this file exists in the same directory
+            File file = new File("ResourcesG2.txt"); // Ensure this file exists in the same directory
             Scanner sc = new Scanner(file); // Create a Scanner object to read the file
             System.out.println("\n=== Resources ===");
             while (sc.hasNextLine()) {      // Check if there is another line in the file
